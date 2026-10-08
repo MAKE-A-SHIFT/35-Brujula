@@ -54,6 +54,19 @@ const dict = {
     step4b_title: "Retiro Espiritual & Registros Akáshicos",
     step4b_desc: "Únete a un viaje transformador en Perú o Paraguay.\n• Rituales chamánicos ancestrales\n• Iniciación a los Registros Akáshicos\n• Curso de lectura de archivos\n• Ejercicios prácticos de conexión",
     step4b_cta: "APLICAR AL RETIRO",
+
+    // Portales Cuánticos Section
+    portals_tag: "TECNOLOGÍA ESPIRITUAL & CIENCIA SAGRADA",
+    portals_title: "DESCIFRA TU MATRIZ PERSONAL",
+    portals_sub: "Explora tus coordenadas cósmicas y frecuencias energéticas a través de nuestros dos motores analíticos tridimensionales.",
+    portal_astro_tag: "GEOMETRÍA CAUSAL & GRAVITATORIA",
+    portal_astro_title: "Carta Astral en 3D",
+    portal_astro_desc: "Visualiza el sello electromagnético impuesto en tu primera respiración. Conoce las posiciones de los siete modulateurs cósmicos en un espacio geocéntrico real.",
+    portal_astro_cta: "ACCEDER AL CALCULADOR ASTRAL",
+    portal_num_tag: "ALGORITMO PITAGÓRICO HANS DECOZ",
+    portal_num_title: "Matriz Numérica Sagrada 3D",
+    portal_num_desc: "Descubre tus 6 Números Centrales, deudas kármicas y ciclos predictivos. Observa la arquitectura vibratoria de tu alma en geometría sagrada.",
+    portal_num_cta: "EXTRAER MATRIZ NUMEROLÓGICA",
   },
   en: {
     title: "35 BRÚJULA",
@@ -96,6 +109,19 @@ const dict = {
     step4b_title: "Spiritual Retreat & Akashic Records",
     step4b_desc: "Join a transformative journey in Peru or Paraguay.\n• Ancestral shamanic rituals\n• Akashic Records initiation\n• Reading archives course\n• Practical connection exercises",
     step4b_cta: "APPLY FOR RETREAT",
+
+    // Quantum Portals Section
+    portals_tag: "SPIRITUAL TECHNOLOGY & SACRED SCIENCE",
+    portals_title: "DECODE YOUR PERSONAL MATRIX",
+    portals_sub: "Explore your cosmic coordinates and energetic frequencies through our two 3D analytical engines.",
+    portal_astro_tag: "CAUSAL & GRAVITATIONAL GEOMETRY",
+    portal_astro_title: "3D Astral Chart",
+    portal_astro_desc: "Visualize the electromagnetic stamp cast upon your first breath. Discover celestial modulators in true geocentric 3D space.",
+    portal_astro_cta: "ACCESS 3D ASTRAL CALCULATOR",
+    portal_num_tag: "HANS DECOZ PYTHAGOREAN ALGORITHM",
+    portal_num_title: "Sacred 3D Numeric Matrix",
+    portal_num_desc: "Reveal your 6 Core Numbers, karmic debts, and predictive cycles. Observe the vibrational architecture of your soul in sacred geometry.",
+    portal_num_cta: "EXTRACT NUMEROLOGY MATRIX",
     }
   , fr: {
     title: "35 BRÚJULA",
@@ -138,6 +164,19 @@ const dict = {
     step4b_title: "Retraite Spirituelle & Annales Akashiques",
     step4b_desc: "Rejoignez un voyage transformateur au Pérou ou au Paraguay.\n• Rituels chamaniques ancestraux\n• Initiation aux Annales Akashiques\n• Cours de lecture des archives\n• Exercices pratiques de connexion",
     step4b_cta: "POSTULER À LA RETRAITE",
+
+    // Section Portails Quantiques
+    portals_tag: "TECHNOLOGIE SPIRITUELLE & SCIENCE SACRÉE",
+    portals_title: "DÉCODEZ VOTRE MATRICE PERSONNELLE",
+    portals_sub: "Explorez vos coordonnées cosmiques et vos fréquences vibratoires à travers nos deux moteurs analytiques tridimensionnels.",
+    portal_astro_tag: "GÉOMÉTRIE CAUSALE & GRAVITATIONNELLE",
+    portal_astro_title: "Carte Astrale en 3D",
+    portal_astro_desc: "Visualisez l'estampillage électromagnétique gravé à votre première inspiration. Découvrez les positions des modulateurs célestes dans un espace géocentrique 3D réel.",
+    portal_astro_cta: "ACCÉDER AU CALCULATEUR ASTRAL 3D",
+    portal_num_tag: "ALGORITHME PYTHAGORICIEN HANS DECOZ",
+    portal_num_title: "Matrice Numérique Sacrée 3D",
+    portal_num_desc: "Révélez vos 6 Nombres Centraux, dettes karmiques et cycles prédictifs. Observez l'architecture vibratoire de votre âme en géométrie sacrée.",
+    portal_num_cta: "EXTRAIRE LA MATRICE NUMÉROLOGIQUE 3D",
   }
   , 
 };
@@ -376,6 +415,91 @@ export default function UI() {
           </motion.div>
 
         </div>
+
+        {/* SECTION PORTAILS 3D : CALCULATEUR ASTRAL & MATRICE NUMÉROLOGIQUE */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col gap-10 text-center pt-8 border-t border-white/10"
+        >
+          <div className="flex flex-col gap-3 items-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-cyan-300 drop-shadow-md">
+              {t.portals_tag}
+            </span>
+            <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-tight text-white drop-shadow-lg">
+              {t.portals_title}
+            </h2>
+            <p className="text-xs md:text-sm text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
+              {t.portals_sub}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-left">
+            {/* PORTAIL CARTE ASTRALE 3D */}
+            <motion.div 
+              whileHover={{ y: -6, scale: 1.01 }}
+              transition={{ duration: 0.3 }}
+              className="relative overflow-hidden bg-gradient-to-br from-indigo-950/40 via-black/60 to-cyan-950/30 backdrop-blur-xl border border-cyan-400/30 rounded-3xl p-8 flex flex-col justify-between shadow-[0_0_50px_rgba(6,182,212,0.15)] group hover:border-cyan-400/60 hover:shadow-[0_0_60px_rgba(6,182,212,0.35)] transition-all duration-500"
+            >
+              <div className="absolute top-0 right-0 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -mr-10 -mt-10"></div>
+              <div>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-cyan-300">
+                    {t.portal_astro_tag}
+                  </span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-white mb-3 drop-shadow-md">
+                  {t.portal_astro_title}
+                </h3>
+                <p className="text-xs md:text-sm text-gray-300 leading-relaxed font-light mb-8">
+                  {t.portal_astro_desc}
+                </p>
+              </div>
+
+              <Link 
+                href="/calculator"
+                className="w-full text-center py-4 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-extrabold text-xs uppercase tracking-widest hover:brightness-110 shadow-[0_0_25px_rgba(6,182,212,0.4)] transition-all flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <span>{t.portal_astro_cta}</span>
+                <span>→</span>
+              </Link>
+            </motion.div>
+
+            {/* PORTAIL MATRICE NUMÉROLOGIQUE 3D */}
+            <motion.div 
+              whileHover={{ y: -6, scale: 1.01 }}
+              transition={{ duration: 0.3 }}
+              className="relative overflow-hidden bg-gradient-to-br from-amber-950/40 via-black/60 to-yellow-950/30 backdrop-blur-xl border border-yellow-400/30 rounded-3xl p-8 flex flex-col justify-between shadow-[0_0_50px_rgba(234,179,8,0.15)] group hover:border-yellow-400/60 hover:shadow-[0_0_60px_rgba(234,179,8,0.35)] transition-all duration-500"
+            >
+              <div className="absolute top-0 right-0 w-48 h-48 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none -mr-10 -mt-10"></div>
+              <div>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                  <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-yellow-300">
+                    {t.portal_num_tag}
+                  </span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-white mb-3 drop-shadow-md">
+                  {t.portal_num_title}
+                </h3>
+                <p className="text-xs md:text-sm text-gray-300 leading-relaxed font-light mb-8">
+                  {t.portal_num_desc}
+                </p>
+              </div>
+
+              <Link 
+                href="/numerology"
+                className="w-full text-center py-4 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-black font-extrabold text-xs uppercase tracking-widest hover:brightness-110 shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <span>{t.portal_num_cta}</span>
+                <span>→</span>
+              </Link>
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
 
       {/* Modal Overlay for Medium Ticket (Reiki/Akashic images) */}
