@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "providers": {
+      "anonymous": false,
+      "emailPassword": true,
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "35 Brujula",
+        "supportEmail": "lucapedonepro@gmail.com",
+        "authorizedRedirectUris": [
+          "https://brujula-35.firebaseapp.com/__/auth/handler",
+          "http://localhost"
+        ]
+      }
+    }
+  }
+}
+
